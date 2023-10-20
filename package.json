@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx playwright test --workers 1 --project=chromium ",
+    "start": "npx playwright test --headed",
+    "headless-chrome": "npx playwright test --workers 1 --project=chromium ",
     "report": "npx playwright show-report",
-    "dev": "npx playwright test  --workers 1 --project=chromium --headed && npm run report",
-    "run-all-browsers": "npx playwright test"
+    "headed-chrome": "npx playwright test  --workers 1 --project=chromium --headed && npm run report",
+    "headless-all-browsers": "npx playwright test"
+    
   },
   "keywords": [],
   "author": "Manan",
