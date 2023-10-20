@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test --workers 1 --project=chromium ",
+    "report": "npx playwright show-report",
+    "dev": "npx playwright test  --workers 1 --project=chromium --headed && npm run report",
+    "run-all-browsers": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "Manan",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.7"
+  }
+}
